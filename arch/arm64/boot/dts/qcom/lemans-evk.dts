@@ -1060,6 +1060,8 @@
 };
 
 &uart0 {
+	/* Convert uart0 from 4W to 2W: TX/RX only */
+	pinctrl-0 = <&qup_uart0_tx &qup_uart0_rx>;
 	status = "okay";
 };
 
